@@ -44,9 +44,9 @@ class Response extends AbstractResponse implements RedirectResponseInterface
      */
     public function isSuccessful()
     {
-        if ($this->isRedirect()) {
-            return false;
-        }
+//        if ($this->isRedirect()) {
+//            return false;
+//        }
 
         return !isset($this->data['error']);
     }
